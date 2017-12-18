@@ -4,7 +4,8 @@
 	// flex-direction: column;
 	text-align: center;
 	padding: 20px 18px;
-	margin-right: 20px;
+	margin-right: 10px;
+	width: 280px;
 
 	&_wrap {
 		display: flex;
@@ -34,7 +35,7 @@
 	}
 	
 	&_promo {
-		width: 310px;
+		// width: 310px;
 		height: 46px;
 		background-color: #cacaca;
 		font-weight: 700;

@@ -7,15 +7,23 @@
 		font-style: italic;
 		margin-bottom: 20px;
 		font-weight: 700;
+
+		&--acid, &--oil {
+			text-align: right;
+		}
 	}
 
 	&_content {
 		background-image: url(../../img/pine.png);
 		background-repeat: no-repeat;
 		padding-left: 180px;
+		height: 118px;
 
 		&--acid {
 			background-image: url(../../img/acid.png);
+			padding-left: 0;
+			padding-right: 180px;
+			background-position: right center;
 		}
 
 		&--gel {
@@ -24,6 +32,9 @@
 
 		&--oil {
 			background-image: url(../../img/oil.png);
+			padding-left: 0;
+			padding-right: 180px;
+			background-position: right center;
 		}
 	}
 }

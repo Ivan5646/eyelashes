@@ -6,11 +6,16 @@
 		text-align: center;
 		font-size: 42px;
 		font-weight: bold;
+		margin-top: 0;
+		padding-top: 20px;
 	}
 
 	&_wrap {
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		background-image: url(../../img/platinumBlack.png);
+		background-repeat: no-repeat;
+		background-position: center;
 	}
 }
