@@ -3,14 +3,18 @@
 	margin-bottom: 40px;
 	font-style: italic;
 
+	&--acid, &--oil {
+		text-align: right;
+	}
+
 	&_header {
 		font-style: italic;
 		margin-bottom: 20px;
 		font-weight: 700;
 
-		&--acid, &--oil {
-			text-align: right;
-		}
+		// &--acid, &--oil {
+		// 	text-align: right;
+		// }
 	}
 
 	&_content {
@@ -18,10 +22,11 @@
 		background-repeat: no-repeat;
 		padding-left: 180px;
 		height: 118px;
+		padding-right: 70px;
 
 		&--acid {
 			background-image: url(../../img/acid.png);
-			padding-left: 0;
+			padding-left: 60px;
 			padding-right: 180px;
 			background-position: right center;
 		}
@@ -32,7 +37,7 @@
 
 		&--oil {
 			background-image: url(../../img/oil.png);
-			padding-left: 0;
+			padding-left: 60px;
 			padding-right: 180px;
 			background-position: right center;
 		}
