@@ -1,0 +1,29 @@
+.feature {
+	width: 50%;
+	margin-bottom: 40px;
+	font-style: italic;
+
+	&_header {
+		font-style: italic;
+		margin-bottom: 20px;
+		font-weight: 700;
+	}
+
+	&_content {
+		background-image: url(../../img/pine.png);
+		background-repeat: no-repeat;
+		padding-left: 180px;
+
+		&--acid {
+			background-image: url(../../img/acid.png);
+		}
+
+		&--gel {
+			background-image: url(../../img/gel.png);
+		}
+
+		&--oil {
+			background-image: url(../../img/oil.png);
+		}
+	}
+}

@@ -1,0 +1,35 @@
+.header {
+	background-image: url("../../img/header-bg.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 500px;
+
+	&_logo {
+		margin-bottom: 40px;
+		h1 {
+			font-size: 48px;
+			margin-bottom: 0;
+			text-transform: uppercase;
+			padding-left: 8px;
+		}
+
+		p {
+			margin-top: 0;
+			font-size: 18px;
+		}
+	}
+	
+	&_bottom {
+		display: flex;
+	}
+
+	&_result {
+		p {
+			font-weight: 700;
+		}
+		p:first-child {
+			text-transform: uppercase;
+		}
+	}
+}
