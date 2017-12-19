@@ -1,0 +1,11 @@
+.order {
+	margin-bottom: 30px;
+	
+	.container {
+		display: flex;
+	}
+
+	.apply_noDiscount .apply_figure {
+		text-decoration: line-through;
+	}
+}
