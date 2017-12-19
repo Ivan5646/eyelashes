@@ -1,1 +1,1 @@
-.reviews_img{background-image:url("../../img/client.png");width:800px;height:154px;margin:0 auto}.reviews .slide{width:500px}.reviews .owl-nav{width:100%}.reviews .owl-next{right:0;width:50px;margin-right:0}
+.reviews_img{background-image:url("../../img/client.png");width:800px;height:154px;margin:0 auto 20px auto}.reviews .slide{width:800px;margin:0 auto}.reviews .owl-nav{width:100%;position:relative;top:-80px}.reviews .owl-next,.reviews .owl-prev{position:absolute}.reviews .owl-next{right:-19px;width:50px;margin-right:0}

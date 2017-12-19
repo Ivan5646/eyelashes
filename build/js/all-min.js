@@ -1,1 +1,1 @@
-$(document).ready(function(){console.log("hey hey"),$(".reviews").owlCarousel({items:1,dotData:!0,nav:!0})});
+$(document).ready(function(){$(".reviews").owlCarousel({items:1,dotData:!0,nav:!0})});
