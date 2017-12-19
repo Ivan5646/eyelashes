@@ -1,0 +1,42 @@
+.result {
+	margin-bottom: 30px;
+
+	.container {
+		display: flex;
+
+	}
+
+	&_img {
+		background-image: url(../../img/result.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		width: 57%;
+		height: auto;
+	}
+
+	h2 {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 42px;
+	}
+
+	&_description {
+		padding-left: 20px;
+	}
+
+	&_top-list {
+		list-style-type: none;
+		margin-bottom: 30px;
+
+		li {
+			margin-bottom: 16px;
+		}
+	}
+
+	&_bottom-list {
+		li {
+			margin-bottom: 16px;
+		}
+	}
+}
