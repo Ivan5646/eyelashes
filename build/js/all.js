@@ -30,8 +30,11 @@ $(document).ready(function(){
   // 	}
   // }
 
+  var tomorrow = new Date();
+  tomorrow.setDate(tomorrow.getDate() + 1);
+  tomorrow = tomorrow.toISOString().slice(0,10); 
   $("#time")
-  .countdown("2018/01/01", function(event) {
+  .countdown(tomorrow, function(event) {
     $(this).text(
       event.strftime('%H:%M:%S')
     );

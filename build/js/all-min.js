@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".reviews").owlCarousel({items:1,dotData:!0,nav:!0}),$("#time").countdown("2018/01/01",function(t){$(this).text(t.strftime("%H:%M:%S"))})});
+$(document).ready(function(){$(".reviews").owlCarousel({items:1,dotData:!0,nav:!0});var t=new Date;t.setDate(t.getDate()+1),t=t.toISOString().slice(0,10),$("#time").countdown(t,function(t){$(this).text(t.strftime("%H:%M:%S"))})});
