@@ -1,5 +1,30 @@
 .use {
+	.container {
+		display: flex;
+		justify-content: center;
+	}
+
 	h2 {
 		text-transform: uppercase;
+	}
+
+	&_natural, &_platinum {
+		background-image: url(../../img/platinumBlack.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 103px;
+		height: 224px;
+		width: 30%;
+		text-align: center;
+	}
+
+	&_instruction  {
+		margin-top: 0;
+		width: 30%;
+
+		li {
+			margin-bottom: 30px;
+			font-weight: 700;
+		}
 	}
 }
