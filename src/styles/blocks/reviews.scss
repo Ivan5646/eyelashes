@@ -3,10 +3,11 @@
 
 	&_img {
 		// background-image: url("../../img/client.png");
-		width: 800px;
+		max-width: 800px;
 		height: 154px;
 		margin: 0 auto 20px auto;
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 	}
 
@@ -14,12 +15,30 @@
 		width: 30% !important;
 	}
 
+	&_client-img {
+		flex-shrink: 1;
+		width: 30%;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		&--first {
+			background-image: url("../../img/olya1.jpg");
+		}
+		&--second {
+			background-image: url("../../img/olya2.jpg");
+		}
+		&--third {
+			background-image: url("../../img/olya3.jpg");
+		}
+	}
+
 	h3 {
 		margin-top: 0;
 	}
 
 	.slide {
-		width: 800px;
+		max-width: 800px;
 		margin: 0 auto;
 	}
 
