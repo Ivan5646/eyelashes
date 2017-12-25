@@ -10,6 +10,8 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		padding-left: 40px;
+		padding-right: 40px;
 	}
 
 	&_user-img {
@@ -36,10 +38,14 @@
 
 	h3 {
 		margin-top: 0;
+		padding-left: 40px;
+		padding-right: 40px;
 	}
 
 	&_text {
 		margin-top: 30px;
+		padding-left: 40px;
+		padding-right: 40px;
 	}
 
 	.slide {
@@ -50,8 +56,9 @@
 	.owl-nav {
 		width: 100%;
 		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
+		top: 30%;
+		// top: 50%;
+		// transform: translateY(-50%);
 		height: 60px;
 	}
 
@@ -60,18 +67,41 @@
 	}
 
 	.owl-prev {
-		left: -37px;
+		left: 0;
 	}
 
 	.owl-next {
-		right: 33px;
+		right: 0;
 		width: 50px;
 		margin-right: 0;
 	}
 
-	// .owl-item img {
-	// 	width: 30% !important;
-	// }
+
+	@media screen and (max-width: 980px) { 
+		.owl-prev {
+			left: -16px;
+			// padding-right: 20px;
+		}
+		.owl-next {
+			// padding-left: 20px;
+		}
+	}
+
+	@media screen and (max-width: 480px) {  
+		text-align: center;
+
+		.owl-nav { 
+			top: 16%;
+		}
+
+		&_text {
+			margin-top: 0;
+		}
+
+		&_img {
+			height: 76px;
+		}
+	}
 }
 
 

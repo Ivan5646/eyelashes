@@ -61,22 +61,24 @@
 
 	@media screen and (max-width: 480px) { 
 		text-align: center;
+		margin-top: -24px;
 
 		&_content { 
 			background-position: top center;
 			// background-size: 34% 100%;
 			padding-top: 131px;
-
+			// margin-bottom: -24px;
+			
 			&--acid, &--oil { 
 				padding-left: 0;
 				padding-right: 0px;
+				
 			}
 
 			&--pine, &--gel {
 				padding-right: 0;
 				padding-left: 0;
 			}
-			
 		}
 	}
 }
