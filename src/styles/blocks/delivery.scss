@@ -28,6 +28,13 @@
 		}
 	}
 
+
+	@media screen and (max-width: 980px) { 
+		&_condition { 
+			background-size: 22%;
+		}
+	}
+
 	@media screen and (max-width: 480px) { 
 		.container { 
 			flex-direction: column;

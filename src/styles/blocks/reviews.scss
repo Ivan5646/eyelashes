@@ -2,10 +2,20 @@
 	margin-bottom: 30px;
 
 	&_img {
-		background-image: url("../../img/client.png");
+		// background-image: url("../../img/client.png");
 		width: 800px;
 		height: 154px;
 		margin: 0 auto 20px auto;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&_user-img {
+		width: 30% !important;
+	}
+
+	h3 {
+		margin-top: 0;
 	}
 
 	.slide {
@@ -29,7 +39,9 @@
 		margin-right: 0;
 	}
 
-
+	// .owl-item img {
+	// 	width: 30% !important;
+	// }
 }
 
 
