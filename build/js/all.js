@@ -3,7 +3,9 @@ $(document).ready(function(){
   $(".reviews").owlCarousel({
     items: 1,
     dotData: true,
-    nav: true
+    nav: true,
+    navText: ["<img src='../img/arrowLeft.png'>","<img src='../img/arrowRight.png'>"],
+    responsiveClass: true
   });
 
   // act_timer();

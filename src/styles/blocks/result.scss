@@ -1,5 +1,6 @@
 .result {
 	margin-bottom: 30px;
+	background-color: #646568;
 
 	.container {
 		display: flex;
@@ -22,6 +23,10 @@
 
 	&_description {
 		padding-left: 20px;
+	}
+
+	&_top-list, &_bottom-list {
+		color: #d9d8d9; //#c7c6c7;
 	}
 
 	&_top-list {
