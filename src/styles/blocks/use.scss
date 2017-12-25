@@ -33,4 +33,21 @@
 			font-weight: 700;
 		}
 	}
+
+	@media screen and (max-width: 480px) { 
+		.container {
+			flex-direction: column;
+			text-align: center;
+		}
+
+		h2 {
+			font-size: 22px;
+		}
+
+		&_natural, &_platinum, &_instruction {
+			margin-bottom: 16px;
+			width: 100%;
+		}
+
+	}
 }

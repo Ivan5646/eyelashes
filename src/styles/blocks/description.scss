@@ -19,15 +19,17 @@
 		background-repeat: no-repeat;
 		background-position: center;
 	}
-}
 
+	@media screen and (max-width: 980px) { 
+		h2 {
+			font-size: 34px;
+		}
 
-@media screen and (max-width: 980px) { 
-    .description { 
-    	&_wrap { 
-    		flex-direction: column;
-    		flex-wrap: no-wrap;
-    		background-image: none;
-    	}
-    }
+		&_wrap { 
+			flex-direction: column;
+			flex-wrap: no-wrap;
+			background-image: none;
+		}
+	}
+
 }

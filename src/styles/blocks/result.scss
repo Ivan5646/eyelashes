@@ -3,7 +3,6 @@
 
 	.container {
 		display: flex;
-
 	}
 
 	&_img {
@@ -37,6 +36,31 @@
 	&_bottom-list {
 		li {
 			margin-bottom: 16px;
+		}
+	}
+
+	@media screen and (max-width: 980px) { 
+		.container { 
+			flex-direction: column;
+		}
+
+		&_img,  &_description { 
+			text-align: center;
+			margin: 0 auto;
+		}
+
+		&_description { 
+			padding-left: 0;
+		}
+
+		&_img { 
+			height: 200px;
+		}
+	}
+
+	@media screen and (max-width: 480px) { 
+		h2 {
+			font-size: 34px;
 		}
 	}
 }
