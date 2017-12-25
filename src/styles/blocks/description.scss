@@ -20,3 +20,14 @@
 		background-position: center;
 	}
 }
+
+
+@media screen and (max-width: 980px) { 
+    .description { 
+    	&_wrap { 
+    		flex-direction: column;
+    		flex-wrap: no-wrap;
+    		background-image: none;
+    	}
+    }
+}

@@ -42,4 +42,46 @@
 			background-position: right center;
 		}
 	}
+
+	@media screen and (max-width: 980px) { 
+		width: 100%;
+		margin-bottom: 16px;
+
+		&_content { 
+			&--acid, &--oil { 
+				padding-left: 0;
+			}
+
+			&--pine, &--gel {
+				padding-right: 0;
+			}
+
+		}
+	}
+
+	@media screen and (max-width: 480px) { 
+		text-align: center;
+
+		&_content { 
+			background-position: top center;
+			// background-size: 34% 100%;
+			padding-top: 131px;
+
+			&--acid, &--oil { 
+				padding-left: 0;
+				padding-right: 0px;
+			}
+
+			&--pine, &--gel {
+				padding-right: 0;
+				padding-left: 0;
+			}
+			
+		}
+	}
 }
+
+
+
+
+
