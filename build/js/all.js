@@ -1,6 +1,6 @@
 $(document).ready(function(){ 
 
-  $(".reviews").owlCarousel({
+  $(".reviews_wrapper").owlCarousel({
     items: 1,
     dotData: true,
     nav: true,

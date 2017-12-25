@@ -1,9 +1,15 @@
 .header {
-	background-image: url("../../img/header-bg.png");
-	background-size: cover;
-	background-position: center;
+	// background-image: url("../../img/header-bg.png");
+	// background-size: cover;
+	// background-position: center;
+	// background-repeat: no-repeat;
+	// background-color: #d9d9d9;
+	// height: 500px;
+	background-image: url(../../img/womanTop.png);
 	background-repeat: no-repeat;
-	height: 500px;
+	background-position: right;
+	background-size: contain;
+	padding-bottom: 30px;
 
 	&_logo {
 		margin-bottom: 32px;
@@ -29,6 +35,8 @@
 	}
 
 	&_result {
+		// width: 40%;
+
 		p {
 			font-weight: 700;
 		}
@@ -38,6 +46,27 @@
 		}
 		p:nth-child(2), p:last-child {
 			padding-left: 16px;
+		}
+	}
+
+
+	@media screen and (max-width: 980px) { 
+		&_logo { 
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
+	}
+
+	@media screen and (max-width: 520px) { 
+		&_bottom {
+			flex-direction: column;
+		}
+
+		&_result { 
+			order: 0;
+			margin: 0 auto;
+			text-align: center;
 		}
 	}
 }

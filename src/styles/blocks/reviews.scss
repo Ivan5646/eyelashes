@@ -1,5 +1,6 @@
 .reviews {
 	margin-bottom: 30px;
+	background-color: #766f73;
 
 	&_img {
 		// background-image: url("../../img/client.png");
@@ -58,8 +59,12 @@
 		position: absolute;
 	}
 
+	.owl-prev {
+		left: -37px;
+	}
+
 	.owl-next {
-		right: -19px;
+		right: 33px;
 		width: 50px;
 		margin-right: 0;
 	}
