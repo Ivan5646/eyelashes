@@ -3,6 +3,24 @@
 	padding-top: 20px;
 	background-color: #766f73;
 
+	&_client-img {
+		flex-shrink: 1;
+		width: 30%;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		&--first {
+			background-image: url("../../img/olya1.jpg");
+		}
+		&--second {
+			background-image: url("../../img/olya2.jpg");
+		}
+		&--third {
+			background-image: url("../../img/olya3.jpg");
+		}
+	}
+
 	&_img {
 		// background-image: url("../../img/client.png");
 		max-width: 800px;
@@ -42,24 +60,6 @@
 		width: 30% !important;
 	}
 
-	&_client-img {
-		flex-shrink: 1;
-		width: 30%;
-		background-size: contain;
-		background-position: center;
-		background-repeat: no-repeat;
-
-		&--first {
-			background-image: url("../../img/olya1.jpg");
-		}
-		&--second {
-			background-image: url("../../img/olya2.jpg");
-		}
-		&--third {
-			background-image: url("../../img/olya3.jpg");
-		}
-	}
-
 	h3 {
 		margin-top: 0;
 		padding-left: 40px;
@@ -75,6 +75,7 @@
 	.slide {
 		max-width: 800px;
 		margin: 0 auto;
+		// z-index: 20;
 	}
 
 	.owl-nav {
@@ -84,10 +85,12 @@
 		// top: 50%;
 		// transform: translateY(-50%);
 		height: 60px;
+		// z-index: -2;
 	}
 
 	.owl-next, .owl-prev {
 		position: absolute;
+		// z-index: 21;
 	}
 
 	.owl-prev {

@@ -8,6 +8,7 @@
 	&_logo {
 		margin-bottom: 32px;
 		margin-left: 130px;
+
 		h1 {
 			font-size: 52px;
 			margin-bottom: 0;
@@ -79,6 +80,12 @@
 			order: 0;
 			margin: 0 auto;
 			text-align: center;
+		}
+
+		&_logo { 
+			h1 {
+				font-size: 46px;
+			}
 		}
 	}
 }
