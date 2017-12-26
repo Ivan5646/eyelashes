@@ -15,13 +15,19 @@
 	}
 
 	&_natural, &_platinum {
-		background-image: url(../../img/platinumBlack.png);
+		background-image: url(../../img/product.png);
 		background-position: center;
 		background-repeat: no-repeat;
+		background-size: contain;
 		width: 103px;
 		height: 224px;
 		width: 30%;
 		text-align: center;
+	}
+
+	&_natural {
+		background-image: url(../../img/natural.png);
+		background-size: 34%;
 	}
 
 	&_instruction  {

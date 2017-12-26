@@ -1,15 +1,9 @@
 .header {
-	// background-image: url("../../img/header-bg.png");
-	// background-size: cover;
-	// background-position: center;
-	// background-repeat: no-repeat;
-	// background-color: #d9d9d9;
-	// height: 500px;
-	background-image: url(../../img/womanTop.png);
+	background-image: url(../../img/womanBlueWide.jpg);
 	background-repeat: no-repeat;
-	background-position: right;
-	background-size: contain;
+	background-size: 100%;
 	padding-bottom: 30px;
+	background-color: #c7cdd9;
 
 	&_logo {
 		margin-bottom: 32px;
@@ -44,9 +38,18 @@
 			text-transform: uppercase;
 			font-size: 20px;
 		}
-		p:nth-child(2), p:last-child {
+		p:nth-child(2), p:nth-child(3) {
 			padding-left: 16px;
 		}
+	}
+
+	&_product-img {
+		width: 110px;
+		height: 170px;
+		background-image: url(../../img/product.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 100% 4px;
 	}
 
 
@@ -55,6 +58,15 @@
 			margin-left: auto;
 			margin-right: auto;
 			text-align: center;
+		}
+
+		&_result {
+			margin-bottom: 16px !important;
+		}
+
+		&_product-img {
+			margin: 0 auto;
+			background-position: center;
 		}
 	}
 

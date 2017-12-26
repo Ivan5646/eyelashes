@@ -1,5 +1,9 @@
 .order {
 	margin-bottom: 30px;
+	background-image: url("../../img/womanBlue.png");
+	background-repeat: no-repeat;
+	// background-size: cover;
+	background-position: right;
 	
 	.container {
 		display: flex;
@@ -7,5 +11,12 @@
 
 	.apply_noDiscount .apply_figure {
 		text-decoration: line-through;
+	}
+
+	&_product {
+		background-image: url("../../img/product.png");
+		background-repeat: no-repeat;
+		width: 30%;
+		background-size: 26%;
 	}
 }
