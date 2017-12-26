@@ -1,9 +1,7 @@
 .order {
-	margin-bottom: 30px;
-	background-image: url("../../img/womanBlue.png");
+	padding-bottom: 30px;
+	background-image: url("../../img/womanWhiteWide.jpg");
 	background-repeat: no-repeat;
-	// background-size: cover;
-	background-position: right;
 	
 	.container {
 		display: flex;
@@ -13,10 +11,47 @@
 		text-decoration: line-through;
 	}
 
+	&_form {
+		width: 42%;
+
+		h2 {
+			margin: 0 auto 10px;
+		}
+	}
+
 	&_product {
 		background-image: url("../../img/product.png");
 		background-repeat: no-repeat;
-		width: 30%;
-		background-size: 26%;
+		width: 58%;
+		background-size: 10%;
+		background-position: 0% 80%;
+	}
+
+	@media screen and (max-width: 980px) { 
+		&_product { 
+			background-position: center;
+		}
+	}
+
+	@media screen and (max-width: 520px) { 
+		.container {
+			flex-direction: column;
+		}
+
+		&_form, &_product {
+			width: 100%;
+			order: 1;
+		}
+
+		&_form {
+			h2 {
+				text-align: center;
+			}
+		}
+
+		&_product {
+			height: 200px;
+			order: 0;
+		}
 	}
 }
