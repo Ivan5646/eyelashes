@@ -1,5 +1,4 @@
 .result {
-	padding-bottom: 30px;
 	background-color: #646568;
 
 	.container {
@@ -40,8 +39,12 @@
 
 	&_bottom-list {
 		li {
-			margin-bottom: 16px;
+			padding-bottom: 16px;
 		}
+	}
+
+	&_regular {
+		margin-bottom: 16px;
 	}
 
 	@media screen and (max-width: 980px) { 
