@@ -1,7 +1,7 @@
 .header {
 	background-image: url(../../img/womanBlueWide.jpg);
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	padding-bottom: 5vh;
 	background-color: #c7cdd9;
 
@@ -10,18 +10,19 @@
 		margin-left: 130px;
 
 		h1 {
-			font-size: 52px;
+			font-size: 60px;
 			margin-bottom: 0;
 			margin-top: 0;
 			text-transform: uppercase;
 			padding-left: 8px;
 			color: #060606;
 			padding-top: 16px;
+			font-weight: 500;
 		}
 
 		p {
 			margin-top: 0;
-			font-size: 20px;
+			font-size: 22px;
 			color: #1a1718;
 		}
 	}
