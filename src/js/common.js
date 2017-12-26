@@ -42,4 +42,11 @@ $(document).ready(function(){
     );
   });
 
+    $("#time2")
+    .countdown(tomorrow, function(event) {
+      $(this).text(
+        event.strftime('%H:%M:%S')
+        );
+    });
+
 });
