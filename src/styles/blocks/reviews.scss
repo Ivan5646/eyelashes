@@ -3,6 +3,10 @@
 	padding-top: 5vh;
 	background-color: #766f73;
 
+	h2 {
+		text-transform: uppercase;
+	}
+
 	&_client-img {
 		flex-shrink: 1;
 		width: 30%;
