@@ -28,7 +28,7 @@
 			<p>Раствор для роста бровей и ресниц</p>
 		</div>
 		<div class="header_bottom">
-			<form class="apply">
+			<form class="apply" action="../../send.php" method="post" onsubmit="validateform(this); return false;">
 				<div class="apply_promo">
 					<div>До конца <br> <span>акции</span></div>
 					<div class="apply_time" id="time"></div>
@@ -44,10 +44,10 @@
 							<div class="apply_figure">990 руб</div>
 						</div>
 					</div>
-					<input type="text" name="" placeholder="Страна">
-					<input type="text" name="name" placeholder="ФИО">
-					<input type="tel" name="phone" placeholder="Номер телефона">
-					<button class="btn">Заказать со скидкой 50%</button>
+					<input type="text" name="country" placeholder="Страна" required>
+					<input type="text" name="name" placeholder="ФИО" required>
+					<input type="tel" name="phone" placeholder="Номер телефона" required>
+					<button class="btn" type="submit">Заказать со скидкой 50%</button>
 				</div>
 			</form>
 			<div class="header_result">
@@ -177,7 +177,7 @@
 	<div class="container">
 		<div class="order_form">
 			<h2>Закажите PLATINUM по рекордно низкой цене!</h2>
-			<form class="apply">
+			<form class="apply" action="../../send.php" method="post" onsubmit="validateform(this); return false;">
 				<div class="apply_promo">
 					<div>До конца <br> <span>акции</span></div>
 					<div class="apply_time" id="time2"></div>
@@ -193,10 +193,10 @@
 							<div class="apply_figure">990 руб</div>
 						</div>
 					</div>
-					<input type="text" name="" placeholder="Страна">
-					<input type="text" name="name" placeholder="ФИО">
-					<input type="tel" name="phone" placeholder="Номер телефона">
-					<button class="btn">Заказать со скидкой 50%</button>
+					<input type="text" name="country" placeholder="Страна" required>
+					<input type="text" name="name" placeholder="ФИО" required>
+					<input type="tel" name="phone" placeholder="Номер телефона" required>
+					<button class="btn" type="submit">Заказать со скидкой 50%</button>
 				</div>
 			</form>
 		</div>
@@ -204,11 +204,43 @@
 	</div>
 </div>
 
-<div class="footer">
-	<div class="container">
-		footer footer footer footer 
-	</div>
-</div>
+<footer>
+    <div class="container">
+        <div class="footer_line"></div>
+        <p><?=BlackBox::geo()->legal()?></p>
+        <p><a href="../politika.php" class="politika" modal="polit">Политика конфиденциальности</a></p>
+    </div>
+</footer>
+
+<script type="text/javascript">
+	function validateform(form) {
+		if (form.elements["name"].value == "") {
+			alert("Please, enter your full name");
+			return false;
+		}
+		if (form.elements["name"].value.length < 2) {
+			alert("Please, enter your full name");
+			return false;
+		}
+		var phone_reg = new RegExp('[A-z А-я]', 'g');
+		var literInPhone = phone_reg.test(form.elements["phone"].value);
+		if (form.elements["phone"].value == "") {
+			alert("Please, enter your phone number");
+			return false;
+		}
+		if (literInPhone) {
+			alert("Please, enter your phone number");
+			return false;
+		}
+		if (form.elements["phone"].value.length < 9) {
+			alert("Please, enter your phone number");
+			return false;
+		}
+
+		form.querySelector(".btn").setAttribute("disabled", true);
+		form.submit();
+	}
+</script>
 	
 
 <script src="//ajax.ɡooɡleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
