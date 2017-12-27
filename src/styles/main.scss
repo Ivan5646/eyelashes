@@ -49,6 +49,13 @@ body {
     font-size: 38px;
 }
 
+@media screen and (max-width: 980px) { 
+    // .container {
+    //     padding-left: 10px;
+    //     padding-right: 10px;
+    // }
+}
+
 @media screen and (max-width: 480px) { 
     .block-header { 
         font-size: 28px;
