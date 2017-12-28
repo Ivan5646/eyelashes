@@ -5,7 +5,8 @@
 	
 	.container {
 		display: flex;
-		justify-content: center;
+		justify-content: space-around;
+		align-items: center;
 	}
 
 	h2 {
@@ -16,26 +17,36 @@
 		text-align: center;
 	}
 
+	&_product {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
 	&_natural, &_platinum {
 		background-image: url(../../img/product.png);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
-		width: 103px;
-		height: 224px;
-		width: 30%;
+		height: 100px;
 		text-align: center;
+	}
+
+	&_platinum {
+		height: 160px;
+		margin-bottom: 20px;
 	}
 
 	&_natural {
 		background-image: url(../../img/natural.png);
-		background-size: 34%;
-		background-position: 50% 1%;
+		// background-size: 34%;
+		width: 80px; 
+		height: 80px;
 	}
 
 	&_instruction  {
 		margin-top: 0;
-		width: 30%;
+		// width: 30%;
 		font-size: 18px;
 
 		li {
@@ -56,7 +67,7 @@
 
 		&_natural, &_platinum, &_instruction {
 			margin-bottom: 16px;
-			width: 100%;
+			// width: 100%;
 		}
 
 		&_instruction {
