@@ -63,6 +63,11 @@
 	@media screen and (max-width: 480px) { 
 		text-align: center;
 
+		&--oil {
+			margin-top: -10px;
+		}
+
+
 		&_content { 
 			background-position: top center;
 			padding-top: 131px;
