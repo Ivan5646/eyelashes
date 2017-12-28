@@ -1,0 +1,16 @@
+.footer {
+	.container {
+		div, p {
+			margin: 0 auto;
+			text-align: center;
+		}
+	}
+	
+	&_line {
+		width: 170px;
+		height: 1px;
+		background: black;
+		margin: 0 auto;
+	}
+}
+

@@ -204,7 +204,7 @@
 	</div>
 </div>
 
-<footer>
+<footer class="footer">
     <div class="container">
         <div class="footer_line"></div>
         <p><?=BlackBox::geo()->legal()?></p>
@@ -247,6 +247,35 @@
 <script src="js/vendors/owl-carousel.min.js"></script>
 <script src="js/vendors/jquery.countdown.min.js"></script>
 <script src="js/all.js"></script>
+
+<script>
+    function validateform(form) {
+        if (form.elements["name"].value == "") {
+            alert("Please, enter your full name");
+            return false;
+        }
+        if (form.elements["name"].value.length < 2) {
+            alert("Please, enter your full name");
+            return false;
+        }
+        var phone_reg = new RegExp('[A-z А-я]', 'g');
+        var literInPhone = phone_reg.test(form.elements["phone"].value);
+        if (form.elements["phone"].value == "") {
+            alert("Please, enter your phone number");
+            return false;
+        }
+        if (literInPhone) {
+            alert("Please, enter your phone number");
+            return false;
+        }
+        if (form.elements["phone"].value.length < 9) {
+            alert("Please, enter your phone number");
+            return false;
+        }
+        form.querySelector(".btn").setAttribute("disabled", true);
+        form.submit();
+    }
+</script>
 
 
 </body>
