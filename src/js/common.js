@@ -5,7 +5,8 @@ $(document).ready(function(){
     dotData: true,
     nav: true,
     navText: ["<img src='../img/arrowLeft.png'>","<img src='../img/arrowRight.png'>"],
-    responsiveClass: true
+    responsiveClass: true,
+    loop: true
   });
 
   // act_timer();
